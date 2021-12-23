@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>homepage</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>
+                <i class="fas fa-home fa-2x"></i>
+            </p>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div>
+            <button>Go</button>
+        </div>
+    </header>
+    <div id="clock"></div>
+    <div id="content">
+        <div id="content-l">
+            <h1>Build your website now</h1>
+            <p>
+                You should have a plan to create website because of It will help you to build and procress faster.
+            </p>
+        </div>
+        <div id="content-r">
+            <img class="img-fluid"
+                src="https://image.freepik.com/free-vector/programming-concept-illustration_114360-1213.jpg" alt="">
+        </div>
+    </div>
+    <div id="bt-content">
+        <div id="bt-header">
+            <h2>Plan</h2>
+            <p>
+                Let's check the plan
+            </p>
+            <div id="bt-content-box">
+                <div id="content-box1">Plan 1</div>
+                <div id="content-box2">Plan 2</div>
+                <div id="content-box3">Plan 3</div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <a href="../template1/index.html"><button class="btn-page">go to template 1</button></a>
+        <a href="../template2/index.html"><button class="btn-page">go to template 2</button></a>
+    </div>
+    <!-- <footer>
+        <div id="footer">
+            <p>
+                create by teetawat
+            </p>
+        </div>
+    </footer> -->
+</body>
+<script>
+    function timer() {
+        var divClock = document.getElementById('clock')
+        var date = new Date()
+        divClock.innerHTML = "Time Now : " + date.toLocaleTimeString()
+    }
+
+    var clock = setInterval(() => {
+        timer()
+    }, 1000)
+</script>
+
+</html>

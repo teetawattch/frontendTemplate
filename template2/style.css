@@ -112,3 +112,20 @@ li:hover {
 #card3 h2 {
     margin-left: 10px;
 }
+.page{
+  display: flex;
+  justify-content: center;
+}
+.btn-page{
+  text-align: center;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 35px;
+  transition: 0.5s;
+}
+.btn-page:hover{
+  background-color: #3c3c3c;
+  color: #fff;
+  cursor: pointer;
+}
